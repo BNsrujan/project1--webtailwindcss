@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    
+</head>
+
+<body class="bg-black">
+   
+    <nav class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+                  Icon when menu is closed.
+
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex flex-shrink-0 items-center">
+                        <img class="h-8 w-auto transition duration-300 hover:text-blue-600" src="./img/white.png" alt="Your Company">
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#" class="bg-gradient-to-r from-indigo- from-10% via-sky-500 via-90%  text-white rounded-md px-3 py-2 text-sm font-medium"
+                                aria-current="page">Dashboard</a>
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 hover:drop-shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+
+
+                    <!-- Profile dropdown -->
+                    <div class="relative ml-3">
+                        <div>
+                            <button type="button"
+                                class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                <span class="absolute -inset-1.5"></span>
+                                <span class="sr-only">Open user menu</span>
+                                <img class="h-8 w-auto rounded-full" src="./img/profile-photo.jpg" alt="" >
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sticky top-0px left-0 w-full h-full z-[-1] bg-black opacity-80">
+        <video class="w-full h-full object-cover" autoplay muted loop>
+          <source src="./img/WhatsApp Video 2024-02-27 at 18.53.32_bd709eda.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="container  mx-auto flex items-center bg-black justify-center h-screen">
+        <div class="flex bg-black text-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-6 flex-1">
+            <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+                <div class="hero-container" data-aos="fade-in">
+                  <h1>Alex Smith</h1>
+                  <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+                </div>
+              </section>
+          </div>
+          <div class="p-6 flex-1 bg-gray-900 opacity-80">
+            <img src="img/profile-photo.jpg" alt="Profile Photo" class="w-full h-full object-cover rounded-lg"> 
+          </div>
+        </div>
+      </div>
+
+
+
+      <section id="facts" class="facts m-10">
+        <div class="container mx-auto">
+      
+          <div class="section-title">
+            <h2 class="text-3xl font-bold mb-4">Facts</h2>
+            <p class="text-gray-700">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+      
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      
+            <div class="count-box p-8 bg-white rounded-lg shadow-md">
+              <i class="bi bi-emoji-smile text-3xl text-blue-500"></i>
+              <span class="text-3xl font-bold text-gray-800 counter">0</span>
+              <p class="text-gray-500 font-medium mt-2">Happy Clients</p>
+            </div>
+      
+            <div class="count-box p-8 bg-white rounded-lg shadow-md">
+              <i class="bi bi-journal-richtext text-3xl text-blue-500"></i>
+              <span class="text-3xl font-bold text-gray-800 counter">0</span>
+              <p class="text-gray-500 font-medium mt-2">Projects</p>
+            </div>
+      
+            <div class="count-box p-8 bg-white rounded-lg shadow-md">
+              <i class="bi bi-headset text-3xl text-blue-500"></i>
+              <span class="text-3xl font-bold text-gray-800 counter">0</span>
+              <p class="text-gray-500 font-medium mt-2">Hours Of Support</p>
+            </div>
+      
+            <div class="count-box p-8 bg-white rounded-lg shadow-md">
+              <i class="bi bi-people text-3xl text-blue-500"></i>
+              <span class="text-3xl font-bold text-gray-800 counter">0</span>
+              <p class="text-gray-500 font-medium mt-2">Hard Workers</p>
+            </div>
+      
+          </div>
+      
+        </div>
+      </section>
+      
+      <div class="container  mb-20 mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <video class="w-full h-80 object-cover flex justify-center" autoplay muted loop>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="p-6">
+            <h1 class="text-xl font-bold mb-2 flex justify-center">Card Title 1</h1>
+            <p class="text-gray-700 mb-4 flex justify-center">This is a short description of the content in card 1.</p>
+            <div class="flex justify-center">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-sm">Learn More</button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <video class="w-full h-80 object-cover flex justify-center" autoplay muted loop>
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="p-6 ">
+            <h1 class="text-xl font-bold mb-2 flex justify-center">Card Title 2</h1>
+            <p class="text-gray-700 mb-4 flex justify-center">This is a short description of the content in card 2.</p>
+            <div class="flex justify-center">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-sm">Learn More</button>
+        </div>
+          </div>
+        </div>
+      
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <video class="w-full h-80 object-cover" autoplay muted loop>
+            <source src="video3.mp4" type="video/mp4 flex justify-center">
+            Your browser does not consider "video1.mp4", "video2.mp4", or "video3.mp4" to be a valid source for a video. You should replace these with the actual paths or URLs to your video files. 
+          </video>
+          <div class="p-6">
+            <h1 class="text-xl font-bold mb-2 flex justify-center">Card Title 3</h1>
+            <p class="text-gray-700 mb-4 flex justify-center">This is a short description of the content in card 3.</p>
+            <div class="flex justify-center">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-sm">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sticky top-0px left-0 w-full h-full z-[-1] bg-black opacity-80">
+        <video class="w-full h-full object-cover" autoplay muted loop>
+          <source src="./img/WhatsApp Video 2024-02-27 at 18.53.32_bd709eda.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+
+
+
+
+      <section id="testimonials" class="testimonials section-bg caret-white">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Testimonials</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+  
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item" data-aos="fade-up">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div><!-- End testimonial item -->
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </section>
+
+
+
+      <section id="contact" class="contact">
+        <div class="container ">
+  
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+  
+          <div class="row" data-aos="fade-in">
+  
+            <div class="col-lg-4 w-30 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+  
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
+  
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 55s</p>
+                </div>
+  
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Contact Section -->
+  
+    </main><!-- End #main -->
+  
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>iPortfolio</span></strong>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer><!-- End  Footer -->
+  
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      
+
+
+      <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const typedSpan = document.querySelector('.typed');
+      const typedStrings = typedSpan.getAttribute('data-typed-items').split(',');
+
+      if (typedStrings.length > 0) {
+        new Typed('.typed', {
+          strings: typedStrings,
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 50,
+          backDelay: 2000
+        });
+      }
+    });
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
+  });
+
+  /**
+   * Animation on scroll
+   */
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
+  });
+
+      </script>
+</body>
+
+</html>
